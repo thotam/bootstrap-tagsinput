@@ -5671,52 +5671,52 @@ a.badge:focus {
 }
 
 .label-important,
-.badge-important {
+.bg-important {
   background-color: #b94a48;
 }
 
 .label-important[href],
-.badge-important[href] {
+.bg-important[href] {
   background-color: #953b39;
 }
 
 .label-warning,
-.badge-warning {
+.bg-warning {
   background-color: #f89406;
 }
 
 .label-warning[href],
-.badge-warning[href] {
+.bg-warning[href] {
   background-color: #c67605;
 }
 
 .label-success,
-.badge-success {
+.bg-success {
   background-color: #468847;
 }
 
 .label-success[href],
-.badge-success[href] {
+.bg-success[href] {
   background-color: #356635;
 }
 
 .label-info,
-.badge-info {
+.bg-info {
   background-color: #3a87ad;
 }
 
 .label-info[href],
-.badge-info[href] {
+.bg-info[href] {
   background-color: #2d6987;
 }
 
 .label-inverse,
-.badge-inverse {
+.bg-inverse {
   background-color: #333333;
 }
 
 .label-inverse[href],
-.badge-inverse[href] {
+.bg-inverse[href] {
   background-color: #1a1a1a;
 }
 
