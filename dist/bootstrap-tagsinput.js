@@ -1,5 +1,5 @@
 /*
- * bootstrap-tagsinput v0.9.3
+ * bootstrap-tagsinput v0.9.4
  *
  */
 
@@ -167,7 +167,7 @@
 					(itemTitle !== null ? '" title="' + itemTitle : "") +
 					'">' +
 					htmlEncode(itemText) +
-					'<span data-bsrole="remove"></span></span>'
+					'<span data-bs-role="remove"></span></span>'
 			);
 			$tag.data("item", item);
 			self.findInputWrapper().before($tag);
@@ -597,7 +597,7 @@
 			// Remove icon clicked
 			self.$container.on(
 				"click",
-				"[data-bsrole=remove]",
+				"[data-bs-role=remove]",
 				$.proxy(function (event) {
 					if (self.$element.attr("disabled")) {
 						return;
@@ -795,11 +795,11 @@
 
 	/**
 	 * Initialize tagsinput behaviour on inputs and selects which have
-	 * data-bsrole=tagsinput
+	 * data-bs-role=tagsinput
 	 */
 	$(function () {
 		$(
-			"input[data-bsrole=tagsinput], select[multiple][data-bsrole=tagsinput]"
+			"input[data-bs-role=tagsinput], select[multiple][data-bs-role=tagsinput]"
 		).tagsinput();
 	});
 })(window.jQuery);

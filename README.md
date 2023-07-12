@@ -2,7 +2,7 @@
 
 Bootstrap Tags Input is a jQuery plugin providing a Twitter Bootstrap user interface for managing tags.
 
-Current stable version: **v0.9.3**
+Current stable version: **v0.9.4**
 
 ## Usage
 
@@ -68,7 +68,7 @@ Libraries for testing go in the **/lib** directory.
 
 ## History
 
--   0.9.3
+-   0.9.4
     -   [Add possibility skip "change" event after "add", "remove", "removeAll"](https://github.com/bootstrap-tagsinput/bootstrap-tagsinput/pull/429)
     -   [Please add version to header of non-minified version.](https://github.com/bootstrap-tagsinput/bootstrap-tagsinput/issues/438)
 -   0.7.1

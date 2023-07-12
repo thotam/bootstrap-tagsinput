@@ -1,5 +1,5 @@
 /*
- * bootstrap-tagsinput v0.9.3
+ * bootstrap-tagsinput v0.9.4
  * 
  */
 @charset "UTF-8";
@@ -60,7 +60,7 @@
 	float: right;
 }
 
-.bootstrap-tagsinput .tag [data-bsrole="remove"] {
+.bootstrap-tagsinput .tag [data-bs-role="remove"] {
 	cursor: pointer;
 	display: inline-block;
 	font-weight: 700;
@@ -69,17 +69,17 @@
 	padding: 0 0.375rem;
 }
 
-[dir="rtl"] .bootstrap-tagsinput .tag [data-bsrole="remove"] {
+[dir="rtl"] .bootstrap-tagsinput .tag [data-bs-role="remove"] {
 	margin-left: -0.375rem;
 	margin-right: 0;
 }
 
-.bootstrap-tagsinput .tag [data-bsrole="remove"]:after {
+.bootstrap-tagsinput .tag [data-bs-role="remove"]:after {
 	content: "×";
 }
 
-.bootstrap-tagsinput .tag [data-bsrole="remove"]:focus,
-.bootstrap-tagsinput .tag [data-bsrole="remove"]:hover {
+.bootstrap-tagsinput .tag [data-bs-role="remove"]:focus,
+.bootstrap-tagsinput .tag [data-bs-role="remove"]:hover {
 	opacity: 0.5;
 }
 
@@ -91,7 +91,7 @@
 	visibility: hidden !important;
 }
 
-.bootstrap-tagsinput.disabled .tag [data-bsrole="remove"] {
+.bootstrap-tagsinput.disabled .tag [data-bs-role="remove"] {
 	display: none !important;
 }
 
