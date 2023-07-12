@@ -149,12 +149,14 @@
 	color: #babbbc !important;
 }
 
+.is-valid ~ * .bootstrap-tagsinput,
 .is-valid .bootstrap-tagsinput,
 .is-valid.bootstrap-tagsinput {
 	border-color: var(--ct-form-valid-border-color);
 }
 
 .is-invalid ~ * .bootstrap-tagsinput,
+.is-invalid .bootstrap-tagsinput,
 .is-invalid.bootstrap-tagsinput {
 	border-color: var(--ct-form-invalid-border-color);
 }
