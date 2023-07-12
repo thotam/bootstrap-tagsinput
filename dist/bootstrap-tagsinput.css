@@ -2,59 +2,160 @@
  * bootstrap-tagsinput v0.8.0
  * 
  */
+@charset "UTF-8";
+.bootstrap-tagsinput {
+	cursor: text;
+	display: block;
+	max-width: 100%;
+	transition: border-color 0.15s;
+	vertical-align: middle;
+}
+
+.bootstrap-tagsinput:after,
+.bootstrap-tagsinput:before {
+	content: " ";
+	display: table;
+}
+
+.bootstrap-tagsinput:after {
+	clear: both;
+}
+
+.bootstrap-tagsinput input,
+.bootstrap-tagsinput-input {
+	background-color: transparent !important;
+	border: none !important;
+	box-shadow: none !important;
+	display: block;
+	float: left;
+	line-height: 1.5rem;
+	max-width: 100% !important;
+	outline: none !important;
+	padding: 0 0.375rem !important;
+	width: auto;
+}
+
+[dir="rtl"] .bootstrap-tagsinput-input,
+[dir="rtl"] .bootstrap-tagsinput input {
+	float: right;
+}
+
+.bootstrap-tagsinput-input {
+	max-width: none !important;
+}
+
+.bootstrap-tagsinput.form-control input::-moz-placeholder {
+	opacity: 1;
+}
+
+.bootstrap-tagsinput .tag {
+	cursor: default;
+	float: left;
+	font-weight: 400;
+	line-height: 1.5rem;
+	padding: 0 0.5rem;
+	position: relative;
+}
+
+[dir="rtl"] .bootstrap-tagsinput .tag {
+	float: right;
+}
+
+.bootstrap-tagsinput .tag [data-role="remove"] {
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 700;
+	line-height: 1.5rem;
+	margin-right: -0.375rem;
+	padding: 0 0.375rem;
+}
+
+[dir="rtl"] .bootstrap-tagsinput .tag [data-role="remove"] {
+	margin-left: -0.375rem;
+	margin-right: 0;
+}
+
+.bootstrap-tagsinput .tag [data-role="remove"]:after {
+	content: "×";
+}
+
+.bootstrap-tagsinput .tag [data-role="remove"]:focus,
+.bootstrap-tagsinput .tag [data-role="remove"]:hover {
+	opacity: 0.5;
+}
+
+.bootstrap-tagsinput.disabled {
+	cursor: not-allowed !important;
+}
+
+.bootstrap-tagsinput.disabled input {
+	visibility: hidden !important;
+}
+
+.bootstrap-tagsinput.disabled .tag [data-role="remove"] {
+	display: none !important;
+}
 
 .bootstrap-tagsinput {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  display: inline-block;
-  padding: 4px 6px;
-  color: #555;
-  vertical-align: middle;
-  border-radius: 4px;
-  max-width: 100%;
-  line-height: 22px;
-  cursor: text;
+	background: transparent;
+	border: var(--ct-border-width) solid var(--ct-border-color);
+	border-radius: 0.25rem;
+	color: #4e5155;
+	padding: 0 0 0.3125rem;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	padding-right: 0.75rem !important;
+	padding-left: 0.75rem !important;
 }
+
+.bootstrap-tagsinput.disabled {
+	background-color: transparent !important;
+	border-color: rgba(24, 28, 33, 0.1) !important;
+}
+
+.bootstrap-tagsinput input,
+.bootstrap-tagsinput-input {
+	margin-top: 0.3125rem;
+}
+
 .bootstrap-tagsinput input {
-  border: none;
-  box-shadow: none;
-  outline: none;
-  background-color: transparent;
-  padding: 0 6px;
-  margin: 0;
-  width: auto;
-  max-width: inherit;
+	color: #4e5155;
 }
-.bootstrap-tagsinput.form-control input::-moz-placeholder {
-  color: #777;
-  opacity: 1;
-}
-.bootstrap-tagsinput.form-control input:-ms-input-placeholder {
-  color: #777;
-}
-.bootstrap-tagsinput.form-control input::-webkit-input-placeholder {
-  color: #777;
-}
-.bootstrap-tagsinput input:focus {
-  border: none;
-  box-shadow: none;
-}
+
 .bootstrap-tagsinput .tag {
-  margin-right: 2px;
-  color: white;
+	font-size: 0.894rem;
+	margin-right: 0.3125rem;
+	margin-top: 0.3125rem;
 }
-.bootstrap-tagsinput .tag [data-role="remove"] {
-  margin-left: 8px;
-  cursor: pointer;
+
+.bootstrap-tagsinput .tag:not(.badge) {
+	background: rgba(24, 28, 33, 0.1);
+	border-radius: 0.125rem;
+	color: #4e5155;
 }
-.bootstrap-tagsinput .tag [data-role="remove"]:after {
-  content: "x";
-  padding: 0px 2px;
+
+[dir="rtl"] .bootstrap-tagsinput .tag {
+	margin-left: 0.3125rem;
+	margin-right: 0;
 }
-.bootstrap-tagsinput .tag [data-role="remove"]:hover {
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+
+.bootstrap-tagsinput.form-control input::-moz-placeholder {
+	color: #babbbc !important;
 }
-.bootstrap-tagsinput .tag [data-role="remove"]:hover:active {
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+
+.bootstrap-tagsinput.form-control input:-ms-input-placeholder {
+	color: #babbbc !important;
+}
+
+.bootstrap-tagsinput.form-control input::-webkit-input-placeholder {
+	color: #babbbc !important;
+}
+
+.is-valid .bootstrap-tagsinput,
+.is-valid.bootstrap-tagsinput {
+	border-color: var(--ct-form-valid-border-color);
+}
+
+.is-invalid ~ * .bootstrap-tagsinput,
+.is-invalid.bootstrap-tagsinput {
+	border-color: var(--ct-form-invalid-border-color);
 }
